@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/map', 'MapController@index');
+Route::get('/calculateGoogleMapDistance', 'MapController@calculateGoogleMapDistance');
